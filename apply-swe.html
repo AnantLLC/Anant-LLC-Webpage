@@ -14,43 +14,71 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <!-- Optional overrides -->
+    
     <style>
+      :root {
+        --anant-gold: #C4A35A;
+        --anant-white: #F8F9F9;
+        --anant-black: #333333;
+      }
+
+      .nav-link.active{
+        color: var(--anant-gold) !important;
+      }
+    
       body {
-        background-color: #333333;
-        color: #F8F9F9;
+        font-family: 'Merriweather', serif;
+        color: var(--anant-black);
+        margin: 0;
+        padding: 0;
+      }
+    
+      .section-dark {
+        background-color: var(--anant-black);
+        color: var(--anant-white);
+      }
+    
+      .highlight {
+        color: var(--anant-gold);
+      }
+    
+      .card-service {
+        background-color: #1E1E1E;
+        color: var(--anant-white);
+        transition: transform 0.3s ease;
+        height: 100%;
+      }
+    
+      .card-service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px rgba(196, 163, 90, 0.5); /* gold shadow */
+      }
+    
+      .hero-section {
+        padding-top: 140px;
+        padding-bottom: 80px;
+        background-color: var(--anant-black);
+        color: var(--anant-white);
+      }
+    
+      .btn-primary {
+        background-color: var(--anant-gold);
+        border-color: var(--anant-gold);
+        color: var(--anant-black);
+      }
+    
+      .btn-primary:hover {
+        background-color: #b58e44;
+        border-color: #b58e44;
+        color: var(--anant-white);
+      }
+    
+      .btn-light {
+        background-color: var(--anant-white);
+        border: none;
+        color: var(--anant-black);
       }
 
-      section, .page-section {
-        background-color: transparent !important;
-      }
-
-      h1, p {
-        color: #F8F9F9 !important;
-      }
-
-      nav.navbar {
-        background-color: #333333;
-      }
-
-      .navbar-nav .nav-link,
-      .navbar-brand {
-        color: #F8F9F9 !important;
-      }
-
-      footer.bg-light {
-        background-color: #333333 !important;
-        color: #F8F9F9;
-      }
-
-      footer .text-muted {
-        color: #333333 !important;
-      }
-
-      .masthead {
-        background: none !important;
-        padding: 100px 0 !important;
-        min-height: unset !important;
-      }
     </style>
     <!-- Microsoft Clarity Analytics -->
     <script type="text/javascript">
@@ -66,20 +94,19 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="index.html">Anant LLC</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto my-2 my-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#internships">Internships</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#meetourceo">Meet Our CEO</a></li>
-          </ul>
-        </div>
+          <a class="navbar-brand" href="index.html#page-top">Anant LLC</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.html#internships">Internships</a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.html#meetourceo">Meet Our CEO</a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://calendly.com/yug-goyal46/1-1-meet-with-yugam" target="_blank">Schedule a Call</a></li>
+                </ul>
+          </div>
       </div>
-    </nav>
+  </nav>
 
     <!-- Form Section -->
     <section class="page-section">
